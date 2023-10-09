@@ -14,15 +14,16 @@ pipleline{
       }
     }
       stage("Package"){
-      steps{
-        echo "Its Wrap the Entire file to artifact"
-        start file3.txt
+      	steps{
+        	echo "Its Wrap the Entire file to artifact"
+        	start file3.txt
       }
     }
-	 stage("Deploy"){
+	stage("Deploy"){
 		steps{
 			echo "This File Sends a Artifacts to the tomcat server"
 		}
 		
 	 }
+}
 }
